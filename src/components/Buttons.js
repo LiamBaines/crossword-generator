@@ -7,9 +7,9 @@ function Buttons(props) {
         <tbody>
           <tr>
             <td>
-              <button onClick={props.generate}>New crossword</button>
+              <button onClick={props.generate}>New Crossword</button>
               <button onClick={props.check}>Check</button>
-              <button onClick={props.reveal}>I give up!</button>
+              <button onClick={props.reveal}>I Give Up!</button>
             </td>
           </tr>
         </tbody>
