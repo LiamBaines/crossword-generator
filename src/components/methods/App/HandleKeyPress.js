@@ -3,9 +3,10 @@
 // import MoveActive from './MoveActive.js'
 
 async function HandleKeyPress(e) {
+  console.log(this.state.grid.values[0][0].animation)
   //move
   if (e.keyCode > 36 && e.keyCode < 41) this.MoveActive(e.key);
-  if (this.state.locked == false) {
+  if (this.state.locked == false && this.state.loading == false) {
     //input character
     if (e.keyCode > 64 && e.keyCode < 123) this.InputCharacter(e.key);
     //backspace/delete

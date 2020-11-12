@@ -4,11 +4,11 @@ import shuffleArray from '../../../library/shuffleArray.js'
 
 async function getSuccessors(num, dir) {
   let param = this.wordAt(num, dir)
-  let url = `https://api.datamuse.com/words?sp=${param}&md=d&max=100`;
+  let url = `https://api.datamuse.com/words?sp=${param}&md=d&max=500`;
   const promise = $.get(url)
     .then((wordsArray) => {
       // discard obscure words
-      let validWords = wordsArray.filter((obj) => (obj.defs && isAlpha(obj.word) == true && obj.score > 100 && obj.defHeadword == undefined));  
+      let validWords = wordsArray.filter((obj) => (obj.defs && isAlpha(obj.word) == true && obj.score > 400 && obj.defHeadword == undefined));  
       // format word definitions
       let formattedWords = validWords.map(obj => {
         let word = obj.word.toUpperCase().split('')

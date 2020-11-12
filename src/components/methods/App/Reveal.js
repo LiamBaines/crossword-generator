@@ -1,6 +1,9 @@
 function Reveal() {
   console.log('Revealing')
-  if (this.state.locked == false) {
+  if (this.state.locked == false && this.state.loading == false) {
+    if (this.state.grid.values.every(row => row.every(square => square.answer == 'x' || square.answer == square.guess))) {
+      this.Success();
+    }
     this.setState(currentState => {
       let score = 0;
       for (let i = 0; i < currentState.height; i++) {

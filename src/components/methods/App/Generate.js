@@ -16,7 +16,8 @@ async function Generate() {
       width: grid.values[0].length,
       height: grid.values.length,
       locked: false,
-      loading: false
+      loading: false,
+      success: false
     }
   })
 }

@@ -3,6 +3,7 @@ function InputCharacter(key) {
     let row = this.state.active.row;
     let col = this.state.active.col;
     currentState.grid.values[row][col].guess = key.toUpperCase();
+    currentState.grid.values[row][col].animation = 'none';
     if (currentState.active.dir == 'across') {
       if (this.ValidNeighbour(row, col, 'right')) {
         currentState.active.col++
@@ -14,6 +15,7 @@ function InputCharacter(key) {
       } 
     }
     return {
+      grid: currentState.grid,
       guesses: currentState.guesses,
       colours: currentState.colours,
       active: currentState.active,

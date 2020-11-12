@@ -8,9 +8,11 @@ function Grid(props) {
       active: props.active,
       animation:props.animation,
       row: props.grid.values[i],
+      loading: props.loading,
       locked: props.locked,
       rowNum: i,
       select: props.select,
+      success: props.success
       })
     );
   }

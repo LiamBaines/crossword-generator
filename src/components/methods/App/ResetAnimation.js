@@ -1,12 +1,14 @@
 async function ResetAnimation() {
-  return new Promise((resolve, reject) => {
-    this.setState(() => {
-      return {
-        animation: 'none'
+  this.setState(currentState => {
+    for (let i = 0; i < currentState.height; i++) {
+      for (let j = 0; j < currentState.width; j++) {
+        currentState.grid.values[i][j].animation = 'none';
       }
-    })
-    resolve()
-  })
+    }
+    return {
+      grid: currentState.grid
+    }
+  })  
 }
 
 export default ResetAnimation;

@@ -12,14 +12,22 @@ function GridSquareWhite(props) {
     if (props.square[props.active.dir] == props.active.num) subClass = 'lightbluesquare'
     if (props.active.row == props.rowNum && props.active.col == props.colNum) subClass = 'bluesquare'  
   }
-  if (props.square.animation == 'incorrect') console.log(props.square.animation)
-  if (props.square.corrected == true) color = 'red';
+  if (props.locked == true) {
+    if (props.square.corrected == true) color = 'red';
+    if (props.success == true) color = '#08c90f';
+  }
+  let delay = (props.loading == true) ? (0.05 * props.rowNum).toString().concat('s') : '0s';
+  let duration = (props.loading == true) ? '2s' : '1s';
+  let count = (props.loading == true) ? 'infinite' : '';
   let style = {
     color: color,
     cursor: 'pointer',
     animationName: props.square.animation,
-    animationDuration: '1s'
+    animationDuration: duration,
+    animationDelay: delay,
+    animationIterationCount: count,
   }
+  if (props.loading == true) style.animationName = 'loading';
   return (
     <td className={subClass} style={style} onClick={() => props.select(props.rowNum, props.colNum)}>
       <span className="number">{num}</span>

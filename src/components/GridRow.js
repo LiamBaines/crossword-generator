@@ -12,10 +12,12 @@ function GridRow(props) {
         GridSquareWhite({
           active: props.active,
           square: props.row[i],
+          loading: props.loading,
           locked: props.locked,
           rowNum: props.rowNum,
           colNum: i,
           select: props.select,
+          success: props.success
         })
       )
     }
