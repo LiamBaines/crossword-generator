@@ -6,9 +6,9 @@ async function HandleKeyPress(e) {
   console.log(this.state.grid.values[0][0].animation)
   //move
   if (e.keyCode > 36 && e.keyCode < 41) this.MoveActive(e.key);
-  if (this.state.locked == false && this.state.loading == false) {
+  if (this.state.loading == false) {
     //input character
-    if (e.keyCode > 64 && e.keyCode < 123) this.InputCharacter(e.key);
+    if (e.keyCode > 64 && e.keyCode < 123 && this.state.locked == false) this.InputCharacter(e.key);
     //backspace/delete
     if (e.keyCode == 8 || e.keyCode == 46) {
       //if cell is filled, delete contents

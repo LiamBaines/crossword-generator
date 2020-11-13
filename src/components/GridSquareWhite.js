@@ -8,10 +8,10 @@ function GridSquareWhite(props) {
   
   let subClass = 'whitesquare'
   let color;
-  if (props.locked == false) {
+  //if (props.locked == false) {
     if (props.square[props.active.dir] == props.active.num) subClass = 'lightbluesquare'
     if (props.active.row == props.rowNum && props.active.col == props.colNum) subClass = 'bluesquare'  
-  }
+  //}
   if (props.locked == true) {
     if (props.square.corrected == true) color = 'red';
     if (props.success == true) color = '#08c90f';
