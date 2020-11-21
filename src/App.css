@@ -73,6 +73,14 @@
   position: relative;
 }
 
+.letterInput {
+  width: 20px;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .loader {
   margin: 0;
   position: absolute;

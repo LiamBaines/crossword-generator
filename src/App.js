@@ -1,5 +1,5 @@
 //classes
-import GridNode from './classes/GridNode.js'
+import AnswerGrid from './classes/AnswerGrid.js'
 
 // components
 import Wrap from './components/Wrap.js'
@@ -42,7 +42,7 @@ class App extends React.Component {
     document.addEventListener('keydown', this.HandleKeyPress);
     this.state = {
       active: {row: 0, col: 0, num: 1, dir: 'across'},
-      grid: new GridNode(),
+      grid: new AnswerGrid(),
       height: 13,
       loading: true,
       locked: false,

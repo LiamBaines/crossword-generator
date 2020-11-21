@@ -1,14 +1,14 @@
 import { acrossArray, answersArray, downArray, numbersArray, fillOrder } from '../library/defaults.js'
 import Square from './Square.js'
 
-import backtrack from './methods/GridNode/backtrack.js'
-import coordsAt from './methods/GridNode/coordsAt.js'
-import generate from './methods/GridNode/generate.js'
-import getSuccessors from './methods/GridNode/getSuccessors.js'
-import insert from './methods/GridNode/insert.js'
-import wordAt from './methods/GridNode/wordAt.js'
+import backtrack from './methods/AnswerGrid/backtrack.js'
+import coordsAt from './methods/AnswerGrid/coordsAt.js'
+import generate from './methods/AnswerGrid/generate.js'
+import getSuccessors from './methods/AnswerGrid/getSuccessors.js'
+import insert from './methods/AnswerGrid/insert.js'
+import wordAt from './methods/AnswerGrid/wordAt.js'
 
-class GridNode {
+class AnswerGrid {
   constructor() {
     this.backtrack = backtrack.bind(this);
     this.coordsAt = coordsAt.bind(this);
@@ -36,4 +36,4 @@ class GridNode {
   }  
 }
 
-export default GridNode;
+export default AnswerGrid;
