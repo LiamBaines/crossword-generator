@@ -1,10 +1,10 @@
-import GridNode from '../../../classes/GridNode.js'
+import AnswerGrid from '../../../classes/AnswerGrid.js'
 
 async function Generate() {
   await this.setState(() => {
     return {
       active: {row: 0, col: 0, num: 1, dir: 'across'},
-      grid: new GridNode(),
+      grid: new AnswerGrid(),
       loading: true,
       score: 0
     }
