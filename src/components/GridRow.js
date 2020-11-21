@@ -1,7 +1,7 @@
 import React from 'react';
 import GridSquareBlack from './GridSquareBlack';
 import GridSquareWhite from './GridSquareWhite';
-y
+
 function GridRow(props) {
   let row = [];
   for (let i = 0; i < props.row.length; i++) {

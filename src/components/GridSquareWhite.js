@@ -28,12 +28,12 @@ function GridSquareWhite(props) {
     animationIterationCount: count,
   }
   if (props.loading == true) style.animationName = 'loading';
-  let input = (props.active.row == props.rowNum && props.active.col == props.colNum) ?       <input type="hidden" autofocus className="letterInput"/> : null;
+  let id = `row${props.rowNum}col${props.colNum}`
   return (
     <td className={subClass} style={style} onClick={() => props.select(props.rowNum, props.colNum)}>
       <span className="number">{num}</span>
       <div className="letter">{char}</div>
-      {input}
+      <input id={id} type="text" className="letterInput"/>
     </td>
   )
 }

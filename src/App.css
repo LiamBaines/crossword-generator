@@ -79,6 +79,8 @@
   outline: 0;
   text-align: center;
   text-transform: uppercase;
+  background: transparent;
+  display: none;
 }
 
 .loader {

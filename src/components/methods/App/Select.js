@@ -1,4 +1,5 @@
 function Select(row, col) {
+  document.getElementById(`row${row}col${col}`).focus();
   let newState = {};
   newState.active = {row: row, col: col, dir: this.state.active.dir, num: this.state.active.num};
   let old = {row: this.state.active.row, col: this.state.active.col};
