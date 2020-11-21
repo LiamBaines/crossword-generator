@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/crossword-generator/static/css/main.07918766.chunk.css",
-    "main.js": "/crossword-generator/static/js/main.1ebb4e2d.chunk.js",
-    "main.js.map": "/crossword-generator/static/js/main.1ebb4e2d.chunk.js.map",
+    "main.css": "/crossword-generator/static/css/main.0734f1a8.chunk.css",
+    "main.js": "/crossword-generator/static/js/main.fb0c060a.chunk.js",
+    "main.js.map": "/crossword-generator/static/js/main.fb0c060a.chunk.js.map",
     "runtime-main.js": "/crossword-generator/static/js/runtime-main.e86d00ff.js",
     "runtime-main.js.map": "/crossword-generator/static/js/runtime-main.e86d00ff.js.map",
     "static/js/2.33429e26.chunk.js": "/crossword-generator/static/js/2.33429e26.chunk.js",
     "static/js/2.33429e26.chunk.js.map": "/crossword-generator/static/js/2.33429e26.chunk.js.map",
     "index.html": "/crossword-generator/index.html",
-    "static/css/main.07918766.chunk.css.map": "/crossword-generator/static/css/main.07918766.chunk.css.map",
+    "static/css/main.0734f1a8.chunk.css.map": "/crossword-generator/static/css/main.0734f1a8.chunk.css.map",
     "static/js/2.33429e26.chunk.js.LICENSE.txt": "/crossword-generator/static/js/2.33429e26.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e86d00ff.js",
     "static/js/2.33429e26.chunk.js",
-    "static/css/main.07918766.chunk.css",
-    "static/js/main.1ebb4e2d.chunk.js"
+    "static/css/main.0734f1a8.chunk.css",
+    "static/js/main.fb0c060a.chunk.js"
   ]
 }
